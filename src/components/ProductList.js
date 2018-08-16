@@ -3,7 +3,6 @@ import Product from './Product';
 
 class ProductList extends Component {
   render() {
-    console.log(this.props.match);
     const products = [
       {
         id: 1,
@@ -24,7 +23,7 @@ class ProductList extends Component {
 
     const productListElement = products.map((product) => {
       return (
-        <Product key={product.id} id={product.id} name={product.name} price={product.price} match={this.props.match} />
+        <Product key={product.id} id={product.id} name={product.name} price={product.price} />
       );
     });
 

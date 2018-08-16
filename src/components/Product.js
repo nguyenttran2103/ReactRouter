@@ -6,7 +6,7 @@ class Product extends Component {
     return (
       <div className="panel panel-primary">
         <div className="panel-heading">
-          <h3 className="panel-title"><Link to={`${this.props.match.url}/${this.props.id}`}>{this.props.name}</Link></h3>
+          <h3 className="panel-title"><Link to={`/productDetail/${this.props.id}`}>{this.props.name}</Link></h3>
         </div>
         <div className="panel-body">
           {this.props.price}
